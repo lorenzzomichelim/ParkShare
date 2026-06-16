@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkShare - Aluguel de Vagas de Garagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🅿️</span>
+                <span class="logo-text">ParkShare</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#vagas">Buscar Vagas</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#anunciar" class="btn-anunciar">Anunciar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Encontre ou alugue uma vaga de garagem perto de você</h1>
+            <p class="hero-subtitle">O ParkShare é o Airbnb das vagas de garagem. Conectamos quem precisa estacionar com quem tem espaço disponível.</p>
+            
+            <div class="search-bar">
+                <input type="text" id="busca-bairro" placeholder="Digite o bairro..." class="search-input">
+                <button id="btn-buscar" class="btn-search">🔍 Buscar Vaga</button>
+            </div>
+            
+            <a href="#anunciar" class="btn-cta-secondary">Quero Cadastrar Minha Vaga</a>
+        </div>
+    </section>
+
+    <section id="vagas" class="section">
+        <div class="container">
+            <h2 class="section-title">Vagas Disponíveis</h2>
+            <p class="section-description">Digite um bairro na busca acima para ver as vagas disponíveis.</p>
+            
+            <div id="container-vagas" class="vagas-container">
+                <p class="vagas-instrucao">👆 Use a barra de pesquisa para encontrar vagas na sua região.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Como Funciona</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">🔎</div>
+                    <h3>Cadastre ou Busque</h3>
+                    <p>Se você tem uma vaga, cadastre-a. Se precisa estacionar, busque por vagas no seu bairro.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Combine o Período</h3>
+                    <p>Defina ou escolha o horário, dia ou mês que a vaga será utilizada.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <h3>Estacione com Segurança</h3>
+                    <p>Confirme a reserva e estacione tranquilamente no local combinado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vantagens" class="section">
+        <div class="container">
+            <h2 class="section-title">Vantagens do ParkShare</h2>
+            <div class="vantagens-grid">
+                <div class="vantagem">
+                    <div class="vantagem-icon">🔒</div>
+                    <h3>Segurança</h3>
+                    <p>Usuários verificados e sistema de avaliação mútua para mais tranquilidade.</p>
+                </div>
+                <div class="vantagem">
+                    <div class="vantagem-icon">💰</div>
+                    <h3>Economia e Renda Extra</h3>
+                    <p>Quem aluga paga menos que estacionamentos. Quem anuncia ganha dinheiro extra.</p>
+                </div>
+                <div class="vantagem">
+                    <div class="vantagem-icon">⚡</div>
+                    <h3>Praticidade</h3>
+                    <p>Tudo pelo celular. Reserve ou anuncie em poucos minutos, sem burocracia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="anunciar" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Cadastre sua vaga</h2>
+            <p class="section-description">Veja como é fácil cadastrar sua vaga!</p>
+            
+            <form id="form-simulacao" class="formulario">
+                <div class="form-group">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="bairro">Bairro da Vaga</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro onde fica sua vaga" required>
+                </div>
+                <button type="submit" class="btn-submit">Simular Ganhos</button>
+            </form>
+
+            <div id="mensagem-sucesso" class="mensagem-sucesso" style="display: none;"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ParkShare</h3>
+                    <p>Conectando vagas e motoristas</p>
+                </div>
+                <div class="footer-social">
+                    <p>Siga-nos:</p>
+                    <span class="social-icon">📘 Facebook</span>
+                    <span class="social-icon">📷 Instagram</span>
+                    <span class="social-icon">🐦 Twitter</span>
+                    <span class="social-icon">💼 LinkedIn</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ParkShare - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
