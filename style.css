@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+header {
+    background-color: #1a252f;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-icon {
+    font-size: 32px;
+}
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+.menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.menu li a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.menu li a:hover {
+    color: #2ecc71;
+}
+.btn-anunciar {
+    background-color: #2ecc71;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s !important;
+}
+.btn-anunciar:hover {
+    background-color: #27ae60 !important;
+}
+.hero {
+    background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 18px 25px;
+    font-size: 16px;
+    outline: none;
+}
+.search-input::placeholder {
+    color: #999;
+}
+.btn-search {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 18px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-search:hover {
+    background-color: #27ae60;
+}
+.btn-cta-secondary {
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-cta-secondary:hover {
+    background-color: #fff;
+    color: #1a252f;
+}
+.section {
+    padding: 80px 20px;
+}
+.section-alt {
+    background-color: #fff;
+}
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    color: #1a252f;
+    margin-bottom: 15px;
+}
+.section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+.vagas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+.vagas-instrucao {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    grid-column: 1 / -1;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+.card-vaga {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-vaga:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.card-vaga-header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.card-vaga-bairro {
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-vaga-body {
+    padding: 20px;
+}
+.card-vaga-descricao {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.card-vaga-preco {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2ecc71;
+}
+.card-vaga-preco span {
+    font-size: 14px;
+    color: #999;
+    font-weight: normal;
+}
+.mensagem-nenhuma-vaga {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    grid-column: 1 / -1;
+    padding: 40px;
+    background-color: #fff3cd;
+    border-radius: 10px;
+    border: 1px solid #ffc107;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.card h3 {
+    font-size: 22px;
+    color: #1a252f;
+    margin-bottom: 15px;
+}
+.card p {
+    color: #666;
+    font-size: 15px;
+}
+.vantagens-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.vantagem {
+    text-align: center;
+    max-width: 280px;
+}
+.vantagem-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.vantagem h3 {
+    font-size: 24px;
+    color: #1a252f;
+    margin-bottom: 15px;
+}
+.vantagem p {
+    color: #666;
+    font-size: 15px;
+}
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #1a252f;
+    margin-bottom: 8px;
+}
+.form-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+.btn-submit {
+    width: 100%;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-submit:hover {
+    background-color: #27ae60;
+}
+.mensagem-sucesso {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+footer {
+    background-color: #1a252f;
+    color: #fff;
+    padding: 50px 20px 30px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.footer-info p {
+    opacity: 0.8;
+}
+.footer-social p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+.social-icon {
+    display: inline-block;
+    margin-right: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.social-icon:hover {
+    opacity: 1;
+}
+.footer-bottom {
+    text-align: center;
+}
+.footer-bottom p {
+    margin-bottom: 8px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+.grupo-integrantes {
+    font-weight: 600;
+    opacity: 1;
+}
+.integrantes {
+    color: #2ecc71;
+}
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    .search-bar {
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    .search-input {
+        border-radius: 15px 15px 0 0;
+    }
+    .btn-search {
+        border-radius: 0 0 15px 15px;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .vantagens-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
