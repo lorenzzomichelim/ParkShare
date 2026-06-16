@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkShare - Compartilhamento de Vagas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuração da paleta de cores solicitada (Verde Esmeralda e Teal)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: '#10b981',
+                        teal: '#14b8a6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-emerald shadow-sm">ParkShare</h1>
+            <nav class="space-x-4 text-sm font-semibold">
+                <a href="#como-funciona" class="hover:text-emerald">Como Funciona</a>
+                <a href="#vagas" class="hover:text-emerald">Vagas</a>
+                <a href="#planos" class="hover:text-emerald">Planos</a>
+                <a href="#faq" class="hover:text-emerald">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Monetize sua vaga ociosa ou estacione sem estresse</h2>
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Conectamos proprietários de vagas com motoristas que precisam de um lugar seguro para estacionar. Simples, rápido e econômico.</p>
+        <div class="space-x-4">
+            <a href="#cadastro" class="bg-emerald text-white px-6 py-3 rounded font-bold hover:bg-emerald/90">Quero Me Cadastrar</a>
+            <a href="#vagas" class="bg-gray-200 text-gray-700 px-6 py-3 rounded font-bold hover:bg-gray-300">Buscar Vagas</a>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="bg-white py-16 border-t border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-2xl font-bold text-center mb-12">Como Funciona</h3>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h4 class="text-xl font-bold text-emerald mb-4">Para Motoristas</h4>
+                    <ul class="list-decimal list-inside space-y-2 text-gray-600">
+                        <li>Busque uma vaga próxima no mapa</li>
+                        <li>Reserve pelo período desejado</li>
+                        <li>Efetue o pagamento seguro</li>
+                        <li>Estacione com tranquilidade</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h4 class="text-xl font-bold text-teal mb-4">Para Proprietários</h4>
+                    <ul class="list-decimal list-inside space-y-2 text-gray-600">
+                        <li>Cadastre sua vaga ociosa</li>
+                        <li>Defina o preço por hora ou dia</li>
+                        <li>Receba pedidos de reserva</li>
+                        <li>Receba seus pagamentos direto na conta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vagas" class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-2xl font-bold text-center mb-4">Vagas em Destaque</h3>
+        <p class="text-center text-gray-500 mb-10">Confira algumas oportunidades disponíveis na plataforma neste momento.</p>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div class="border rounded-lg overflow-hidden shadow-sm bg-white p-4">
+                <div class="h-40 bg-gray-200 rounded mb-4 flex items-center justify-center text-gray-400">[Imagem da Vaga]</div>
+                <h4 class="font-bold text-lg">Vaga Coberta - Centro Histórico</h4>
+                <p class="text-sm text-gray-500">São Paulo - SP</p>
+                <p class="text-emerald font-bold mt-2">R$ 12,00 / hora</p>
+            </div>
+            <div class="border rounded-lg overflow-hidden shadow-sm bg-white p-4">
+                <div class="h-40 bg-gray-200 rounded mb-4 flex items-center justify-center text-gray-400">[Imagem da Vaga]</div>
+                <h4 class="font-bold text-lg">Garagem Residencial Privada</h4>
+                <p class="text-sm text-gray-500">Curitiba - PR</p>
+                <p class="text-emerald font-bold mt-2">R$ 8,00 / hora</p>
+            </div>
+            <div class="border rounded-lg overflow-hidden shadow-sm bg-white p-4">
+                <div class="h-40 bg-gray-200 rounded mb-4 flex items-center justify-center text-gray-400">[Imagem da Vaga]</div>
+                <h4 class="font-bold text-lg">Estacionamento Próximo ao Metrô</h4>
+                <p class="text-sm text-gray-500">Rio de Janeiro - RJ</p>
+                <p class="text-emerald font-bold mt-2">R$ 15,00 / hora</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-emerald to-teal text-white p-8 rounded-xl text-center">
+            <h4 class="text-2xl font-bold mb-2">Tem uma garagem vazia?</h4>
+            <p class="mb-6 opacity-90">Usuários da plataforma faturam em média **R$ 450,00 por mês** apenas compartilhando seu espaço.</p>
+            <a href="#cadastro" class="bg-white text-emerald px-6 py-2 rounded font-bold hover:bg-gray-100">Começar a Ganhar Dinheiro</a>
+        </div>
+    </section>
+
+    <section class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-4 text-center">
+            <div>
+                <p class="text-4xl font-extrabold text-emerald">+50</p>
+                <p class="text-sm text-gray-400">Cidades Atendidas</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold text-emerald">+12 mil</p>
+                <p class="text-sm text-gray-400">Vagas Cadastradas</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold text-emerald">24/7</p>
+                <p class="text-sm text-gray-400">Suporte e Disponibilidade</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos" class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-2xl font-bold text-center mb-12">Nossos Planos</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="border rounded-lg p-6 bg-white flex flex-col justify-between">
+                <div>
+                    <h4 class="font-bold text-xl mb-2">Básico</h4>
+                    <p class="text-3xl font-bold mb-4">Grátis</p>
+                    <ul class="text-sm space-y-2 text-gray-600 mb-6">
+                        <li>✓ Cadastrar 1 vaga</li>
+                        <li>✓ Reserva via app</li>
+                        <li>✗ Taxa de serviço padrão</li>
+                    </ul>
+                </div>
+                <button class="w-full border border-emerald text-emerald py-2 rounded font-semibold">Escolher Básico</button>
+            </div>
+            <div class="border-2 border-emerald rounded-lg p-6 bg-white relative shadow-md flex flex-col justify-between">
+                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald text-white text-xs px-3 py-1 rounded-full font-bold">RECOMENDADO</span>
+                <div>
+                    <h4 class="font-bold text-xl mb-2">Pro</h4>
+                    <p class="text-3xl font-bold mb-4">R$ 29<span class="text-sm font-normal">/mês</span></p>
+                    <ul class="text-sm space-y-2 text-gray-600 mb-6">
+                        <li>✓ Cadastrar até 3 vagas</li>
+                        <li>✓ Destaque nas buscas</li>
+                        <li>✓ Taxa de serviço reduzida</li>
+                    </ul>
+                </div>
+                <button class="w-full bg-emerald text-white py-2 rounded font-semibold hover:bg-emerald/90">Escolher Pro</button>
+            </div>
+            <div class="border rounded-lg p-6 bg-white flex flex-col justify-between">
+                <div>
+                    <h4 class="font-bold text-xl mb-2">Business</h4>
+                    <p class="text-3xl font-bold mb-4">R$ 99<span class="text-sm font-normal">/mês</span></p>
+                    <ul class="text-sm space-y-2 text-gray-600 mb-6">
+                        <li>✓ Vagas ilimitadas</li>
+                        <li>✓ Painel de gestão corporativa</li>
+                        <li>✓ Suporte Gerencial 24h</li>
+                    </ul>
+                </div>
+                <button class="w-full border border-emerald text-emerald py-2 rounded font-semibold">Escolher Business</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-2xl font-bold text-center mb-12">Quem usa, aprova</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-600 italic mb-4">"Minha vaga de garagem ficava vazia o dia todo enquanto eu estava no trabalho. Agora pago meu condomínio só com o valor que recebo alugando ela no ParkShare."</p>
+                    <p class="font-bold text-sm text-gray-800">- Mariana Silva, Proprietária</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-600 italic mb-4">"Nunca mais me preocupei em procurar estacionamento perto da faculdade. Reservo pelo app antes de sair de casa e economizo metade do preço cobrado por estacionamentos comerciais."</p>
+                    <p class="font-bold text-sm text-gray-800">- Carlos Eduardo, Motorista</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="max-w-4xl mx-auto px-4 py-16">
+        <h3 class="text-2xl font-bold text-center mb-12">Perguntas Frequentes</h3>
+        <div class="space-y-4">
+            <div class="border-b pb-4">
+                <h4 class="font-bold text-lg mb-1">O serviço é seguro?</h4>
+                <p class="text-sm text-gray-600">Sim. Todos os usuários passam por verificação de perfil e as transações financeiras são totalmente criptografadas.</p>
+            </div>
+            <div class="border-b pb-4">
+                <h4 class="font-bold text-lg mb-1">Como recebo os pagamentos das locações?</h4>
+                <p class="text-sm text-gray-600">Os valores acumulados das locações da sua vaga são transferidos automaticamente para sua conta bancária cadastrada uma vez por mês.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="bg-emerald text-white py-16 text-center">
+        <div class="max-w-md mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-4">Crie sua conta hoje mesmo</h3>
+            <p class="mb-8 text-emerald-100">Cadastre-se rapidamente para começar a buscar ou alugar vagas.</p>
+            
+            <form class="space-y-4 text-gray-800 text-left bg-white p-6 rounded-lg shadow-md">
+                <div>
+                    <label class="block text-sm font-semibold mb-1">Nome:</label>
+                    <input type="text" class="w-full border rounded p-2" placeholder="Seu nome completo" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-1">E-mail:</label>
+                    <input type="email" class="w-full border rounded p-2" placeholder="seu@email.com" required>
+                </div>
+                <button type="button" onclick="alert('Cadastro simulado com sucesso!')" class="w-full bg-teal text-white py-2 rounded font-bold hover:bg-teal/90">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm">
+        <p>&copy; 2026 ParkShare. Projeto Acadêmico - Engenharia de Software.</p>
+    </footer>
+
+</body>
+</html>
