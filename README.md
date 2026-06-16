@@ -1,6 +1,6 @@
 # ParkShare - Documentação do Projeto (Entrega Documental)
 
-Este repositório contém o código-fonte da landing page institucional da **ParkShare**, desenvolvida como projeto prático para a disciplina de **Programação Front-End** no 2º bimestre do curso de Engenharia de Software.
+Este repositório contém o código-fonte da landing page institucional da **ParkShare**, desenvolvida como projeto prático para a disciplina de **Programação Front-End** no 3º semestre do curso de Engenharia de Software.
 
 O projeto consiste em um sistema simples, responsivo e funcional focado em demonstrar a proposta de valor, funcionamento, planos e credibilidade de um marketplace de compartilhamento de vagas de garagem.
 
